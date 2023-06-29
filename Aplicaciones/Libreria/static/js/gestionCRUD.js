@@ -8,8 +8,8 @@
   //A continuación para cada elemento de la lista aplicamos un evento de escucha.
   btnEliminacion.forEach((btn) => {
     btn.addEventListener("click", (eventClick) => {
-      const confirmacion = confirm("¿Seguro que desea eliminar el usuario?");
-      if (!confirmacion) { 
+      const confirmation = confirm("¿Seguro que desea eliminar el usuario?");
+      if (!confirmation) { 
         eventClick.preventDefault(); //Si la confirmación devuelve false se cancelará el evento click
       }
     });
