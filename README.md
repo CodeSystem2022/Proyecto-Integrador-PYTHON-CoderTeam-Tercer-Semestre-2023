@@ -47,14 +47,15 @@ largo y por momentos muy dificil pero junto al apoyo entre compañeros y el prof
 
 ## Contacto
 
-GitHub: - [Gonzalo Quiroga Sassu](https://github.com/GonzaQ7)
-        - [Hilda Yolanda Ortiz](https://github.com/yolyhil)
-        - [Adan Gomez](https://github.com/2022Adan)
-        - [Natan Jabie](https://github.com/wildBlueTurtle)
-        - [Marcelo Lamas](https://github.com/MarceloLamas)
-        - [Veronica Cardenas](https://github.com/Verocardenas0794)
-        - [Nazareno Maya](https://github.com/nazarenomartin)
-        - [Diego Alvarez](https://github.com/DiegoFAlvarez97)
+**GitHub:** 
+- [Gonzalo Quiroga Sassu](https://github.com/GonzaQ7)
+- [Hilda Yolanda Ortiz](https://github.com/yolyhil)
+- [Adan Gomez](https://github.com/2022Adan)
+- [Natan Jabie](https://github.com/wildBlueTurtle)
+- [Marcelo Lamas](https://github.com/MarceloLamas)
+- [Veronica Cardenas](https://github.com/Verocardenas0794)
+- [Nazareno Maya](https://github.com/nazarenomartin)
+- [Diego Alvarez](https://github.com/DiegoFAlvarez97)
 
 ## En el directorio del proyecto se debe ingresar en la consola:
 
