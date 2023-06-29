@@ -14,7 +14,8 @@
 - Hilda Yolanda Ortiz
 - Marcelo Lamas
   
-- **Proyecto:** CRUD Libreria Python
+##Proyecto 
+ - CRUD Libreria Python
 
 ## Fundamentación
 
