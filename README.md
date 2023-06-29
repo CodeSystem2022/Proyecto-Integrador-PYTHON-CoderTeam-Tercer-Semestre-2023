@@ -4,14 +4,14 @@
 
 - **Profesor:** Ariel Betancud
 
-- **Desarrolladorre:**  Gonzalo Quiroga Sassu
--                       Veronica Cardenas
--                       Adan Gomez
--                       Natan Jabie
--                       Diego Alvares
--                       Nazareno Maya
--                       Hilda Yolanda Ortiz
--                       Marcelo Lamas
+- **Desarrolladorres:**  Gonzalo Quiroga Sassu
+                         Veronica Cardenas
+                         Adan Gomez
+                         Natan Jabie
+                         Diego Alvares
+                         Nazareno Maya
+                         Hilda Yolanda Ortiz
+                         Marcelo Lamas
   
 - **Proyecto:** CRUD Libreria Python
 
