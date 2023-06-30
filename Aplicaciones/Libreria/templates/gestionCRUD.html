@@ -1,0 +1,119 @@
+{% extends "./base.html" %} {% block title %} Gestión de libros {% endblock %}
+{% block body %}
+<div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+    <h2>Gestion de libros</h2>
+    <div class="card">
+      <div class="card-body">
+        <form action="/registrarLibro/" method="POST">
+          {% csrf_token %}
+          <div class="form-group py-2">
+            <input
+              type="text"
+              id="txtCodigo"
+              name="txtCodigo"
+              class="form-control"
+              placeholder="Codigo"
+              maxlength="6"
+              minlength="6"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              type="text"
+              id="txtNombre"
+              name="txtNombre"
+              class="form-control"
+              placeholder="Nombre"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              type="text"
+              id="txtAutor"
+              name="txtAutor"
+              class="form-control"
+              placeholder="Autor"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              type="text"
+              id="precio"
+              name="precio"
+              class="form-control"
+              placeholder="Precio"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              type="text"
+              id="genero"
+              name="genero"
+              class="form-control"
+              placeholder="Genero"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group d-grid gap-2 py-2">
+            <button type="submit" class="btn btn-success text-white">
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+    <h1>Listado de libros</h1>
+    <div class="table-resposive py-2">
+      <table class="table">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Genero</th>
+            <th scope="col" colspan="2">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for libro in libros %}
+          <tr>
+            <th scope="row">{{forloop.counter}}</th>
+            <th scope="row">{{libro.codigo}}</th>
+            <td>{{libro.nombre}}</td>
+            <td>{{libro.autor}}</td>
+            <td>{{libro.precio}}</td>
+            <td>{{libro.genero}}</td>
+
+            <td>
+              <a href="edicionLibro/{{libro.codigo}}" class="btn btn-primary"
+                >Editar</a
+              >
+            </td>
+            <td>
+              <a
+                href="eliminacionLibro/{{libro.codigo}}"
+                class="btn btn-danger btnEliminacion"
+                >Eliminar</a
+              >
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
