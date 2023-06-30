@@ -5,7 +5,7 @@ from django.contrib import messages
 
 # Create your views here.
 """ Definimos y creamos nuestras vistas """
-"""------------ Veronica Cardenas -----------"""
+"""------------ Veronica Cardenas, Yoly Ortiz -----------"""
 def home(request):
     libros = Libro.objects.all()
     messages.success(request,'Libros Listados!')
