@@ -1,0 +1,84 @@
+
+{% extends "./base.html" %} {%block title%} Gestion Usuarios {%endblock%}
+{%block body %}
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <h2>Edicion de usuarios</h2>
+    <div class="card">
+      <div class="card-body">
+        <form action="/editarLibro/" method="POST">
+          {% csrf_token %}
+
+          <div class="form-group py-2">
+            <input
+              value="{{libro.codigo}}"
+              type="text"
+              id="txtCodigo"
+              name="txtCodigo"
+              class="form-control"
+              placeholder="Codigo"
+              maxlength="6"
+              minlength="6"
+              required
+              readonly
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              value="{{libro.nombre}}"
+              type="text"
+              id="txtNombre"
+              name="txtNombre"
+              class="form-control"
+              placeholder="Nombre"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              value="{{libro.autor}}"
+              type="text"
+              id="txtAutor"
+              name="txtAutor"
+              class="form-control"
+              placeholder="Autor"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              value="{{libro.precio}}"
+              type="text"
+              id="precio"
+              name="precio"
+              class="form-control"
+              placeholder="Precio"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group py-2">
+            <input
+              value="{{libro.genero}}"
+              type="text"
+              id="genero"
+              name="genero"
+              class="form-control"
+              placeholder="Genero"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="form-group d-grid gap-2 py-2">
+            <button type="submit" class="btn btn-success text-white">
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
