@@ -8,7 +8,7 @@
 - Gonzalo Quiroga Sassu
 - Veronica Cardenas
 - Adan Gomez
-- Natan Jabie
+- Nатаи Јаbiе
 - Diego Alvares
 - Nazareno Maya
 - Hilda Yolanda Ortiz
